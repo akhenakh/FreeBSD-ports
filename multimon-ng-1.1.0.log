@@ -1,4 +1,4 @@
-build started at Tue Jan 12 10:40:33 EST 2016
+build started at Fri Jan 15 13:22:04 EST 2016
 port directory: /usr/ports/comms/multimon-ng
 building for: FreeBSD 10amd64-development 10.2-RELEASE-p8 FreeBSD 10.2-RELEASE-p8 amd64
 maintained by: akh@nobugware.com
@@ -23,8 +23,8 @@ MASTERMNT=/usr/local/poudriere/data/.m/10amd64-development/ref
 FORCE_PACKAGE=yes
 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/root/bin
 POUDRIERE_BUILD_TYPE=bulk
-OLDPWD=/
-PWD=/usr/local/poudriere/data/.m/10amd64-development/ref/.p/pool
+OLDPWD=/usr/home/akh/FreeBSD-ports
+PWD=/
 MASTERNAME=10amd64-development
 SCRIPTPREFIX=/usr/local/share/poudriere
 USER=root
@@ -240,30 +240,27 @@ Scanning dependencies of target multimon-ng
 --- CMakeFiles/multimon-ng.dir/uart.c.o ---
 --- CMakeFiles/multimon-ng.dir/pocsag.c.o ---
 --- CMakeFiles/multimon-ng.dir/selcall.c.o ---
---- CMakeFiles/multimon-ng.dir/unixinput.c.o ---
-[  2%] Building C object CMakeFiles/multimon-ng.dir/unixinput.c.o
+--- CMakeFiles/multimon-ng.dir/pocsag.c.o ---
+[  2%] Building C object CMakeFiles/multimon-ng.dir/pocsag.c.o
 --- CMakeFiles/multimon-ng.dir/uart.c.o ---
 [  5%] Building C object CMakeFiles/multimon-ng.dir/uart.c.o
---- CMakeFiles/multimon-ng.dir/unixinput.c.o ---
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/unixinput.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/unixinput.c
---- CMakeFiles/multimon-ng.dir/uart.c.o ---
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/uart.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/uart.c
---- CMakeFiles/multimon-ng.dir/selcall.c.o ---
-[  8%] Building C object CMakeFiles/multimon-ng.dir/selcall.c.o
---- CMakeFiles/multimon-ng.dir/pocsag.c.o ---
-[ 11%] Building C object CMakeFiles/multimon-ng.dir/pocsag.c.o
---- CMakeFiles/multimon-ng.dir/selcall.c.o ---
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/selcall.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/selcall.c
 --- CMakeFiles/multimon-ng.dir/pocsag.c.o ---
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/pocsag.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/pocsag.c
+--- CMakeFiles/multimon-ng.dir/unixinput.c.o ---
+[  8%] Building C object CMakeFiles/multimon-ng.dir/unixinput.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/unixinput.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/unixinput.c
+--- CMakeFiles/multimon-ng.dir/selcall.c.o ---
+[ 11%] Building C object CMakeFiles/multimon-ng.dir/selcall.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/selcall.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/selcall.c
 --- CMakeFiles/multimon-ng.dir/hdlc.c.o ---
 [ 13%] Building C object CMakeFiles/multimon-ng.dir/hdlc.c.o
+--- CMakeFiles/multimon-ng.dir/demod_zvei1.c.o ---
+--- CMakeFiles/multimon-ng.dir/hdlc.c.o ---
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/hdlc.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/hdlc.c
 --- CMakeFiles/multimon-ng.dir/demod_zvei1.c.o ---
 [ 16%] Building C object CMakeFiles/multimon-ng.dir/demod_zvei1.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_zvei1.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_zvei1.c
---- CMakeFiles/multimon-ng.dir/demod_zvei2.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_zvei3.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_zvei2.c.o ---
 [ 19%] Building C object CMakeFiles/multimon-ng.dir/demod_zvei2.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_zvei2.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_zvei2.c
@@ -272,7 +269,6 @@ Scanning dependencies of target multimon-ng
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_zvei3.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_zvei3.c
 --- CMakeFiles/multimon-ng.dir/demod_pzvei.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_dzvei.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_ccir.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_pzvei.c.o ---
 [ 25%] Building C object CMakeFiles/multimon-ng.dir/demod_pzvei.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_pzvei.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_pzvei.c
@@ -280,21 +276,23 @@ Scanning dependencies of target multimon-ng
 [ 27%] Building C object CMakeFiles/multimon-ng.dir/demod_dzvei.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_dzvei.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_dzvei.c
 --- CMakeFiles/multimon-ng.dir/demod_ccir.c.o ---
+--- CMakeFiles/multimon-ng.dir/demod_eia.c.o ---
+--- CMakeFiles/multimon-ng.dir/demod_ccir.c.o ---
 [ 30%] Building C object CMakeFiles/multimon-ng.dir/demod_ccir.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_ccir.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_ccir.c
+--- CMakeFiles/multimon-ng.dir/demod_eea.c.o ---
+--- CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_eia.c.o ---
 [ 33%] Building C object CMakeFiles/multimon-ng.dir/demod_eia.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_eia.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_eia.c
---- CMakeFiles/multimon-ng.dir/demod_eea.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o ---
-[ 36%] Building C object CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o
 --- CMakeFiles/multimon-ng.dir/demod_poc24.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o ---
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_ufsk12.c
---- CMakeFiles/multimon-ng.dir/demod_poc12.c.o ---
+[ 36%] Building C object CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o
 --- CMakeFiles/multimon-ng.dir/demod_eea.c.o ---
 [ 38%] Building C object CMakeFiles/multimon-ng.dir/demod_eea.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_eea.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_eea.c
+--- CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o ---
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_ufsk12.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_ufsk12.c
 --- CMakeFiles/multimon-ng.dir/demod_poc24.c.o ---
 [ 41%] Building C object CMakeFiles/multimon-ng.dir/demod_poc24.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_poc24.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_poc24.c
@@ -303,30 +301,28 @@ Scanning dependencies of target multimon-ng
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_poc12.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_poc12.c
 --- CMakeFiles/multimon-ng.dir/demod_poc5.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_hapn48.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_poc5.c.o ---
-[ 47%] Building C object CMakeFiles/multimon-ng.dir/demod_poc5.c.o
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_poc5.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_poc5.c
---- CMakeFiles/multimon-ng.dir/demod_hapn48.c.o ---
-[ 50%] Building C object CMakeFiles/multimon-ng.dir/demod_hapn48.c.o
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_hapn48.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_hapn48.c
 --- CMakeFiles/multimon-ng.dir/demod_fsk96.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_dtmf.c.o ---
+--- CMakeFiles/multimon-ng.dir/demod_hapn48.c.o ---
+[ 47%] Building C object CMakeFiles/multimon-ng.dir/demod_hapn48.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_hapn48.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_hapn48.c
+--- CMakeFiles/multimon-ng.dir/demod_poc5.c.o ---
+[ 50%] Building C object CMakeFiles/multimon-ng.dir/demod_poc5.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_poc5.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_poc5.c
 --- CMakeFiles/multimon-ng.dir/demod_fsk96.c.o ---
 [ 52%] Building C object CMakeFiles/multimon-ng.dir/demod_fsk96.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_fsk96.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_fsk96.c
 --- CMakeFiles/multimon-ng.dir/demod_dtmf.c.o ---
-[ 55%] Building C object CMakeFiles/multimon-ng.dir/demod_dtmf.c.o
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_dtmf.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_dtmf.c
 --- CMakeFiles/multimon-ng.dir/demod_clipfsk.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_fmsfsk.c.o ---
+--- CMakeFiles/multimon-ng.dir/demod_dtmf.c.o ---
+[ 55%] Building C object CMakeFiles/multimon-ng.dir/demod_dtmf.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_dtmf.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_dtmf.c
 --- CMakeFiles/multimon-ng.dir/demod_clipfsk.c.o ---
 [ 58%] Building C object CMakeFiles/multimon-ng.dir/demod_clipfsk.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_clipfsk.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_clipfsk.c
 --- CMakeFiles/multimon-ng.dir/demod_fmsfsk.c.o ---
 [ 61%] Building C object CMakeFiles/multimon-ng.dir/demod_fmsfsk.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_fmsfsk.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_fmsfsk.c
---- CMakeFiles/multimon-ng.dir/demod_afsk24.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_afsk24_3.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_afsk24.c.o ---
 [ 63%] Building C object CMakeFiles/multimon-ng.dir/demod_afsk24.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_afsk24.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_afsk24.c
@@ -342,38 +338,36 @@ Scanning dependencies of target multimon-ng
 [ 72%] Building C object CMakeFiles/multimon-ng.dir/demod_afsk12.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_afsk12.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_afsk12.c
 --- CMakeFiles/multimon-ng.dir/demod_flex.c.o ---
---- CMakeFiles/multimon-ng.dir/BCHCode.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_flex.c.o ---
 [ 75%] Building C object CMakeFiles/multimon-ng.dir/demod_flex.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_flex.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_flex.c
 --- CMakeFiles/multimon-ng.dir/BCHCode.c.o ---
 [ 77%] Building C object CMakeFiles/multimon-ng.dir/BCHCode.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/BCHCode.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/BCHCode.c
 --- CMakeFiles/multimon-ng.dir/costabi.c.o ---
-[ 80%] Building C object CMakeFiles/multimon-ng.dir/costabi.c.o
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/costabi.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/costabi.c
 --- CMakeFiles/multimon-ng.dir/costabf.c.o ---
 --- CMakeFiles/multimon-ng.dir/costabi.c.o ---
+[ 80%] Building C object CMakeFiles/multimon-ng.dir/costabi.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/costabi.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/costabi.c
 /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/costabi.c:5:18: warning: 'extern' variable has an initializer [-Wextern-initializer]
 extern const int costabi[0x400] = {
                  ^
+1 warning generated.
+--- CMakeFiles/multimon-ng.dir/clip.c.o ---
 --- CMakeFiles/multimon-ng.dir/costabf.c.o ---
 [ 83%] Building C object CMakeFiles/multimon-ng.dir/costabf.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/costabf.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/costabf.c
---- CMakeFiles/multimon-ng.dir/costabi.c.o ---
-1 warning generated.
 --- CMakeFiles/multimon-ng.dir/clip.c.o ---
+[ 86%] Building C object CMakeFiles/multimon-ng.dir/clip.c.o
+/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/clip.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/clip.c
 --- CMakeFiles/multimon-ng.dir/costabf.c.o ---
 /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/costabf.c:5:20: warning: 'extern' variable has an initializer [-Wextern-initializer]
 extern const float costabf[0x400] = {
                    ^
 1 warning generated.
 --- CMakeFiles/multimon-ng.dir/fms.c.o ---
---- CMakeFiles/multimon-ng.dir/clip.c.o ---
-[ 86%] Building C object CMakeFiles/multimon-ng.dir/clip.c.o
-/usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/clip.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/clip.c
---- CMakeFiles/multimon-ng.dir/fms.c.o ---
 [ 88%] Building C object CMakeFiles/multimon-ng.dir/fms.c.o
+--- CMakeFiles/multimon-ng.dir/demod_eas.c.o ---
+--- CMakeFiles/multimon-ng.dir/fms.c.o ---
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/fms.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/fms.c
 --- CMakeFiles/multimon-ng.dir/demod_eas.c.o ---
 [ 91%] Building C object CMakeFiles/multimon-ng.dir/demod_eas.c.o
@@ -386,14 +380,15 @@ char    *strrchr(const char *, int) __pure;
                              ^
 --- CMakeFiles/multimon-ng.dir/demod_morse.c.o ---
 --- CMakeFiles/multimon-ng.dir/demod_dumpcsv.c.o ---
---- CMakeFiles/multimon-ng.dir/demod_eas.c.o ---
-1 warning generated.
 --- CMakeFiles/multimon-ng.dir/demod_morse.c.o ---
 [ 94%] Building C object CMakeFiles/multimon-ng.dir/demod_morse.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_morse.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_morse.c
 --- CMakeFiles/multimon-ng.dir/demod_dumpcsv.c.o ---
 [ 97%] Building C object CMakeFiles/multimon-ng.dir/demod_dumpcsv.c.o
 /usr/bin/cc  -DCHARSET_UTF8 -DDUMMY_AUDIO -DMAX_VERBOSE_LEVEL=3 -DNO_X11  -O2 -pipe  -fstack-protector -fno-strict-aliasing -O2 -pipe  -fstack-protector -fno-strict-aliasing   -std=gnu99 -o CMakeFiles/multimon-ng.dir/demod_dumpcsv.c.o   -c /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_dumpcsv.c
+--- CMakeFiles/multimon-ng.dir/demod_eas.c.o ---
+1 warning generated.
+--- CMakeFiles/multimon-ng.dir/demod_dumpcsv.c.o ---
 /wrkdirs/usr/ports/comms/multimon-ng/work/multimon-ng-1.1.0/demod_dumpcsv.c:56:6: warning: assigning to 'short *' from 'const short *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
         src = buffer.sbuffer;
             ^ ~~~~~~~~~~~~~~
@@ -453,12 +448,12 @@ The operation will free 101 KiB.
 [10amd64-development] [1/1] Deleting files for multimon-ng-1.1.0: .... done
 ===========================================================================
 ====>> Checking for extra files and directories
-[00:17:34] ====>> Installing from package
+[00:00:14] ====>> Installing from package
 [10amd64-development] Installing multimon-ng-1.1.0...
 [10amd64-development] Extracting multimon-ng-1.1.0: .... done
-[00:17:34] ====>> Cleaning up
+[00:00:14] ====>> Cleaning up
 ===>  Cleaning for multimon-ng-1.1.0
-[00:17:34] ====>> Deinstalling package
+[00:00:14] ====>> Deinstalling package
 Updating database digests format: . done
 Checking integrity... done (0 conflicting)
 Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
@@ -469,5 +464,5 @@ Installed packages to be REMOVED:
 The operation will free 101 KiB.
 [10amd64-development] [1/1] Deinstalling multimon-ng-1.1.0...
 [10amd64-development] [1/1] Deleting files for multimon-ng-1.1.0: .... done
-build of comms/multimon-ng ended at Tue Jan 12 10:40:45 EST 2016
-build time: 00:00:12
+build of comms/multimon-ng ended at Fri Jan 15 13:22:13 EST 2016
+build time: 00:00:09
