@@ -1,0 +1,380 @@
+build started at Tue Jan 12 10:43:16 EST 2016
+port directory: /usr/ports/comms/libfap
+building for: FreeBSD 10amd64-development 10.2-RELEASE-p8 FreeBSD 10.2-RELEASE-p8 amd64
+maintained by: akh@nobugware.com
+ident warning: no id keywords in /usr/local/poudriere/data/.m/10amd64-development/ref//usr/ports/comms/libfap/Makefile
+Makefile ident: 
+Poudriere version: 3.1.10
+Host OSVERSION: 1002000
+Jail OSVERSION: 1002000
+
+---Begin Environment---
+PKGREPOSITORY=/tmp/pkgs
+PACKAGES=/tmp/pkgs
+OSVERSION=1002000
+UNAME_v=FreeBSD 10.2-RELEASE-p8
+UNAME_r=10.2-RELEASE-p8
+BLOCKSIZE=K
+MAIL=/var/mail/root
+STATUS=1
+SAVED_TERM=xterm-256color
+NO_WARNING_PKG_INSTALL_EOL=yes
+MASTERMNT=/usr/local/poudriere/data/.m/10amd64-development/ref
+FORCE_PACKAGE=yes
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/root/bin
+POUDRIERE_BUILD_TYPE=bulk
+OLDPWD=/usr/home/akh/FreeBSD-ports
+PWD=/
+MASTERNAME=10amd64-development
+SCRIPTPREFIX=/usr/local/share/poudriere
+USER=root
+HOME=/root
+POUDRIERE_VERSION=3.1.10
+SCRIPTPATH=/usr/local/share/poudriere/testport.sh
+TRYBROKEN=yes
+LIBEXECPREFIX=/usr/local/libexec/poudriere
+LOCALBASE=/usr/local
+PACKAGE_BUILDING=yes
+---End Environment---
+
+---Begin OPTIONS List---
+---End OPTIONS List---
+
+--CONFIGURE_ARGS--
+
+--End CONFIGURE_ARGS--
+
+--CONFIGURE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/comms/libfap/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/comms/libfap/work  HOME=/wrkdirs/usr/ports/comms/libfap/work TMPDIR="/tmp" SHELL=/bin/sh CONFIG_SHELL=/bin/sh
+--End CONFIGURE_ENV--
+
+--MAKE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/comms/libfap/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/comms/libfap/work  HOME=/wrkdirs/usr/ports/comms/libfap/work TMPDIR="/tmp" NO_PIE=yes NO_DEBUG_FILES=yes SHELL=/bin/sh NO_LINT=YES PREFIX=/usr/local  LOCALBASE=/usr/local  LIBDIR="/usr/lib"  CC="cc" CFLAGS="-O2 -pipe  -fstack-protector -fno-strict-aliasing"  CPP="cpp" CPPFLAGS=""  LDFLAGS=" -fstack-protector" LIBS=""  CXX="c++" CXXFLAGS="-O2 -pipe -fstack-protector -fno-strict-aliasing "  MANPREFIX="/usr/local" BSD_INSTALL_PROGRAM="install  -s -m 555"  BSD_INSTALL_LIB="install  -s -m 444"  BSD_INSTALL_SCRIPT="install  -m 555"  BSD_INSTALL_DATA="install  -m 0644"  BSD_INSTALL_MAN="install  -m 444"
+--End MAKE_ENV--
+
+--PLIST_SUB--
+OSREL=10.2
+PREFIX=%D
+LOCALBASE=/usr/local
+RESETPREFIX=/usr/local
+PORTDOCS=""
+PORTEXAMPLES=""
+LIB32DIR=lib
+DOCSDIR="share/doc/libfap"
+EXAMPLESDIR="share/examples/libfap"
+DATADIR="share/libfap"
+WWWDIR="www/libfap"
+ETCDIR="etc/libfap"
+--End PLIST_SUB--
+
+--SUB_LIST--
+PREFIX=/usr/local
+LOCALBASE=/usr/local
+DATADIR=/usr/local/share/libfap
+DOCSDIR=/usr/local/share/doc/libfap
+EXAMPLESDIR=/usr/local/share/examples/libfap
+WWWDIR=/usr/local/www/libfap
+ETCDIR=/usr/local/etc/libfap
+--End SUB_LIST--
+
+---Begin make.conf---
+USE_PACKAGE_DEPENDS=yes
+BATCH=yes
+WRKDIRPREFIX=/wrkdirs
+PORTSDIR=/usr/ports
+PACKAGES=/packages
+DISTDIR=/distfiles
+---End make.conf---
+=======================<phase: check-sanity   >============================
+===>  License GPLv2 accepted by the user
+===========================================================================
+=======================<phase: pkg-depends    >============================
+===>   libfap-1.5 depends on file: /usr/local/sbin/pkg - not found
+===>   Installing existing package /packages/All/pkg-1.6.2.txz
+[10amd64-development] Installing pkg-1.6.2...
+[10amd64-development] Extracting pkg-1.6.2: .......... done
+Message from pkg-1.6.2:
+If you are upgrading from the old package format, first run:
+
+  # pkg2ng
+===>   libfap-1.5 depends on file: /usr/local/sbin/pkg - found
+===>   Returning to build of libfap-1.5
+===========================================================================
+=======================<phase: fetch-depends  >============================
+===========================================================================
+=======================<phase: fetch          >============================
+===>  License GPLv2 accepted by the user
+===>   libfap-1.5 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by libfap-1.5 for building
+===========================================================================
+=======================<phase: checksum       >============================
+===>  License GPLv2 accepted by the user
+===>   libfap-1.5 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by libfap-1.5 for building
+=> SHA256 Checksum OK for libfap-1.5.tar.gz.
+===========================================================================
+=======================<phase: extract-depends>============================
+===========================================================================
+=======================<phase: extract        >============================
+===>  License GPLv2 accepted by the user
+===>   libfap-1.5 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by libfap-1.5 for building
+===>  Extracting for libfap-1.5
+=> SHA256 Checksum OK for libfap-1.5.tar.gz.
+===========================================================================
+=======================<phase: patch-depends  >============================
+===========================================================================
+=======================<phase: patch          >============================
+===>  Patching for libfap-1.5
+===========================================================================
+=======================<phase: build-depends  >============================
+===========================================================================
+=======================<phase: lib-depends    >============================
+===========================================================================
+====>> Recording filesystem state for prebuild... done
+=======================<phase: configure      >============================
+===>  Configuring for libfap-1.5
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... nawk
+checking whether make sets $(MAKE)... yes
+checking build system type... x86_64-unknown-freebsd10.2
+checking host system type... x86_64-unknown-freebsd10.2
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking dependency style of cc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... no
+checking how to convert x86_64-unknown-freebsd10.2 file names to x86_64-unknown-freebsd10.2 format... func_convert_file_noop
+checking how to convert x86_64-unknown-freebsd10.2 file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from cc object... ok
+checking for sysroot... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... cpp
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... yes
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... freebsd10.2 ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) cc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to accept ISO C89... (cached) none needed
+checking dependency style of cc... (cached) gcc3
+checking for stdlib.h... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for string.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking for pow in -lm... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating licenses/Makefile
+config.status: creating src/Makefile
+config.status: creating libfap.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+===========================================================================
+=======================<phase: build          >============================
+===>  Building for libfap-1.5
+--- all ---
+/usr/bin/make  all-recursive
+--- all-recursive ---
+Making all in licenses
+Making all in src
+--- fap.lo ---
+--- helpers.lo ---
+--- helpers2.lo ---
+--- fap.lo ---
+/bin/sh ../libtool --tag=CC    --mode=compile cc -DHAVE_CONFIG_H -I. -I..      -O2 -pipe  -fstack-protector -fno-strict-aliasing -MT fap.lo -MD -MP -MF .deps/fap.Tpo -c -o fap.lo fap.c
+--- helpers.lo ---
+/bin/sh ../libtool --tag=CC    --mode=compile cc -DHAVE_CONFIG_H -I. -I..      -O2 -pipe  -fstack-protector -fno-strict-aliasing -MT helpers.lo -MD -MP -MF .deps/helpers.Tpo -c -o helpers.lo helpers.c
+--- helpers2.lo ---
+/bin/sh ../libtool --tag=CC    --mode=compile cc -DHAVE_CONFIG_H -I. -I..      -O2 -pipe  -fstack-protector -fno-strict-aliasing -MT helpers2.lo -MD -MP -MF .deps/helpers2.Tpo -c -o helpers2.lo helpers2.c
+--- helpers.lo ---
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -O2 -pipe -fstack-protector -fno-strict-aliasing -MT helpers.lo -MD -MP -MF .deps/helpers.Tpo -c helpers.c  -fPIC -DPIC -o .libs/helpers.o
+--- helpers2.lo ---
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -O2 -pipe -fstack-protector -fno-strict-aliasing -MT helpers2.lo -MD -MP -MF .deps/helpers2.Tpo -c helpers2.c  -fPIC -DPIC -o .libs/helpers2.o
+--- fap.lo ---
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -O2 -pipe -fstack-protector -fno-strict-aliasing -MT fap.lo -MD -MP -MF .deps/fap.Tpo -c fap.c  -fPIC -DPIC -o .libs/fap.o
+--- helpers.lo ---
+helpers.c:717:48: warning: passing 'int *' to parameter of type 'unsigned int *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        fapint_parse_comment_telemetry(packet, &rest, &len);
+                                                      ^~~~
+./helpers2.h:121:86: note: passing argument to parameter 'rest_len' here
+void fapint_parse_comment_telemetry(fap_packet_t* packet, char** rest, unsigned int* rest_len);
+                                                                                     ^
+helpers.c:889:11: warning: incompatible pointer to integer conversion assigning to 'time_t' (aka 'long') from 'char *(*)(int, int)' [-Wint-conversion]
+                        result += timezone;
+                               ^  ~~~~~~~~
+--- helpers2.lo ---
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -O2 -pipe -fstack-protector -fno-strict-aliasing -MT helpers2.lo -MD -MP -MF .deps/helpers2.Tpo -c helpers2.c -o helpers2.o >/dev/null 2>&1
+--- fap.lo ---
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -O2 -pipe -fstack-protector -fno-strict-aliasing -MT fap.lo -MD -MP -MF .deps/fap.Tpo -c fap.c -o fap.o >/dev/null 2>&1
+--- helpers2.lo ---
+mv -f .deps/helpers2.Tpo .deps/helpers2.Plo
+--- fap.lo ---
+mv -f .deps/fap.Tpo .deps/fap.Plo
+--- helpers.lo ---
+2 warnings generated.
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -O2 -pipe -fstack-protector -fno-strict-aliasing -MT helpers.lo -MD -MP -MF .deps/helpers.Tpo -c helpers.c -o helpers.o >/dev/null 2>&1
+mv -f .deps/helpers.Tpo .deps/helpers.Plo
+--- libfap.la ---
+/bin/sh ../libtool --tag=CC    --mode=link cc  -O2 -pipe  -fstack-protector -fno-strict-aliasing  -version-info 6:0:0 -fstack-protector -o libfap.la -rpath /usr/local/lib fap.lo helpers.lo helpers2.lo  -lm
+libtool: link: cc -shared  -fPIC -DPIC  .libs/fap.o .libs/helpers.o .libs/helpers2.o   -lm  -O2 -fstack-protector -fstack-protector   -Wl,-soname -Wl,libfap.so.6 -o .libs/libfap.so.6.0.0
+libtool: link: (cd ".libs" && rm -f "libfap.so.6" && ln -s "libfap.so.6.0.0" "libfap.so.6")
+libtool: link: (cd ".libs" && rm -f "libfap.so" && ln -s "libfap.so.6.0.0" "libfap.so")
+libtool: link: ar cru .libs/libfap.a  fap.o helpers.o helpers2.o
+libtool: link: ranlib .libs/libfap.a
+libtool: link: ( cd ".libs" && rm -f "libfap.la" && ln -s "../libfap.la" "libfap.la" )
+===========================================================================
+====>> Checking for filesystem violations... done
+=======================<phase: run-depends    >============================
+===========================================================================
+====>> Recording filesystem state for prestage... done
+=======================<phase: stage          >============================
+===>  Staging for libfap-1.5
+===>   Generating temporary packing list
+if test -z 'strip'; then  /usr/bin/make  INSTALL_PROGRAM="/bin/sh /wrkdirs/usr/ports/comms/libfap/work/libfap-1.5/install-sh -c -s"  install_sh_PROGRAM="/bin/sh /wrkdirs/usr/ports/comms/libfap/work/libfap-1.5/install-sh -c -s" INSTALL_STRIP_FLAG=-s  install;  else  /usr/bin/make  INSTALL_PROGRAM="/bin/sh /wrkdirs/usr/ports/comms/libfap/work/libfap-1.5/install-sh -c -s"  install_sh_PROGRAM="/bin/sh /wrkdirs/usr/ports/comms/libfap/work/libfap-1.5/install-sh -c -s" INSTALL_STRIP_FLAG=-s  "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install;  fi
+Making install in licenses
+Making install in src
+ .././install-sh -c -d '/wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c -s  libfap.la '/wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libfap.so.6.0.0 /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.so.6.0.0
+libtool: install: strip --strip-unneeded /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.so.6.0.0
+libtool: install: (cd /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib && { ln -s -f libfap.so.6.0.0 libfap.so.6 || { rm -f libfap.so.6 && ln -s libfap.so.6.0.0 libfap.so.6; }; })
+libtool: install: (cd /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib && { ln -s -f libfap.so.6.0.0 libfap.so || { rm -f libfap.so && ln -s libfap.so.6.0.0 libfap.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfap.lai /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.la
+libtool: install: /usr/bin/install -c .libs/libfap.a /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.a
+libtool: install: strip --strip-debug /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.a
+libtool: install: chmod 644 /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.a
+libtool: install: ranlib /wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/libfap.a
+libtool: install: warning: remember to run `libtool --finish /usr/local/lib'
+ .././install-sh -c -d '/wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/include'
+ install  -m 0644 fap.h '/wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/include'
+ ./install-sh -c -d '/wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/pkgconfig'
+ install  -m 0644 libfap.pc '/wrkdirs/usr/ports/comms/libfap/work/stage/usr/local/lib/pkgconfig'
+====> Compressing man pages (compress-man)
+===========================================================================
+====> Running Q/A tests (stage-qa)
+====> Checking for pkg-plist issues (check-plist)
+===> Parsing plist
+===> Checking for items in STAGEDIR missing from pkg-plist
+===> Checking for items in pkg-plist which are not in STAGEDIR
+===> No pkg-plist issues found (check-plist)
+====>> Checking for staging violations... done
+=======================<phase: package        >============================
+===>  Building package for libfap-1.5
+===========================================================================
+=======================<phase: install-mtree  >============================
+===========================================================================
+====>> Recording filesystem state for preinst... done
+=======================<phase: install        >============================
+===>  Installing for libfap-1.5
+===>  Checking if libfap already installed
+===>   Registering installation for libfap-1.5
+[10amd64-development] Installing libfap-1.5...
+===========================================================================
+====>> Checking shared library dependencies
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.7]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.5]
+=======================<phase: deinstall      >============================
+===>  Deinstalling for libfap
+===>   Deinstalling libfap-1.5
+Updating database digests format: .. done
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+	libfap-1.5
+
+The operation will free 208 KiB.
+[10amd64-development] [1/1] Deinstalling libfap-1.5...
+[10amd64-development] [1/1] Deleting files for libfap-1.5: ......... done
+===========================================================================
+====>> Checking for extra files and directories
+[00:00:14] ====>> Installing from package
+[10amd64-development] Installing libfap-1.5...
+[10amd64-development] Extracting libfap-1.5: ......... done
+[00:00:15] ====>> Cleaning up
+===>  Cleaning for libfap-1.5
+[00:00:15] ====>> Deinstalling package
+Updating database digests format: . done
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+	libfap-1.5
+
+The operation will free 208 KiB.
+[10amd64-development] [1/1] Deinstalling libfap-1.5...
+[10amd64-development] [1/1] Deleting files for libfap-1.5: ......... done
+build of comms/libfap ended at Tue Jan 12 10:43:27 EST 2016
+build time: 00:00:11
