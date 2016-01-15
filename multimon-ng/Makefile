@@ -1,16 +1,16 @@
 # $FreeBSD$
 
-PORTNAME=  	multimon-ng
+PORTNAME=	multimon-ng
 PORTVERSION=	1.1.0
-CATEGORIES=     comms hamradio
+CATEGORIES=	comms hamradio
 
-MAINTAINER= 	akh@nobugware.com
+MAINTAINER=	akh@nobugware.com
 COMMENT=	Digital transmission decoder
 
-LICENSE=        GPLv2
+LICENSE=	GPLv2
 
 USE_GITHUB=	yes
-GH_ACCOUNT= 	EliasOenal
+GH_ACCOUNT=	EliasOenal
 
 USES=	 	cmake
 
